@@ -16,8 +16,7 @@ listaPersonaje = json.loads(response.text)
 
 #Esta lista almacena el los datos de personaje nombre y especie
 DatosPersonaje=[]
-#recorro la lista de respuesta listaPersonaje para obtener nombre, especie,la primer url de 
-episodio 
+#recorro la lista de respuesta listaPersonaje para obtener nombre, especie,la primer url de episodio 
 # donde aparece el personaje
 for personaje in listaPersonaje: 
     urlEpisodio.append(personaje['episode'][0])
